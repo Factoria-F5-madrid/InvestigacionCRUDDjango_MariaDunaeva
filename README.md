@@ -1,6 +1,6 @@
-__Investigación y Desarrollo de un CRUD con Django__
+# __Investigación y Desarrollo de un CRUD con Django__
 
-__Parte 1: Aplicación CRUD y Django__
+## __Parte 1: Aplicación CRUD y Django__
 
 
 
