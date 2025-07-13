@@ -1,9 +1,10 @@
-Investigación y Desarrollo de un CRUD con Django
+__Investigación y Desarrollo de un CRUD con Django__
 
-Parte 1: Aplicación CRUD y Django 
+__Parte 1: Aplicación CRUD y Django__
 
 
-🔄 ¿Qué significa CRUD?
+
+🔄 __¿Qué significa CRUD?__
 
 Un CRUD es un acrónimo que representa las cuatro operaciones básicas que puede realizar una aplicación sobre datos:
 
@@ -25,7 +26,7 @@ Taskify: Una app de gestión de tareas donde los usuarios pueden:
 Backend (por ejemplo, en Django o Node.js) se encarga de las operaciones sobre la base de datos, y el frontend (React, Vue, etc.) interactúa mediante formularios y botones que disparan esas acciones.
 
 
-🔄 ¿Qué son los patrones de arquitectura en desarrollo de software?
+🔄 __¿Qué son los patrones de arquitectura en desarrollo de software?__
 
 Son esquemas organizativos que definen cómo estructurar y conectar los distintos componentes de una aplicación (datos, lógica, interfaz, etc.). Su objetivo es mejorar la claridad, escalabilidad, mantenibilidad y la separación de responsabilidades.
 
@@ -50,7 +51,7 @@ Es una variante del MVC adaptada por Django:
 Django utiliza el patrón MVT (Modelo–Vista–Template). Aunque conceptualmente es muy parecido a MVC, Django lo adapta para funcionar con su propio sistema de templates y rutas.
 
 
-🔄 ¿Cómo se estructura un proyecto en Django? Explicar brevemente el rol de los modelos, vistas, templates y URLs. 
+🔄 __¿Cómo se estructura un proyecto en Django? Explicar brevemente el rol de los modelos, vistas, templates y URLs.__
 
 🏗️ Estructura básica de un proyecto en Django
 Al crear un proyecto con Django, se genera una carpeta principal que contiene:
@@ -97,7 +98,7 @@ Dentro de cada app, se usan estos cuatro elementos clave:
           <li>{{ libro.titulo }}</li>
           
 
-🔄 ¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django? 
+🔄 __¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django?__
 
 Flujo de datos en Django:
 - El usuario rellena y envía el formulario HTML. Esto puede ser un <form> típico con campos como nombre, email, descripción, etc.
@@ -109,7 +110,7 @@ Flujo de datos en Django:
 - Django devuelve una respuesta (HTML, redirección, mensaje). Puede mostrar una página de confirmación, volver al formulario, o redirigir a otra vista.
       
       
-🔄 ¿Qué herramientas o comandos ofrece Django para facilitar el desarrollo de un CRUD, para qué es cada una? (Por ejemplo: startapp, makemigrations, migrate, runserver, ModelForm, admin, etc.) 
+🔄 __¿Qué herramientas o comandos ofrece Django para facilitar el desarrollo de un CRUD, para qué es cada una? (Por ejemplo: startapp, makemigrations, migrate, runserver, ModelForm, admin, etc.)__
 
 Django viene equipado con una serie de herramientas. Estas son las más utilizadas 👇:
 
@@ -171,7 +172,7 @@ from .models import Producto
 admin.site.register(Producto)
 
 
-🔄 ¿Cómo funciona el Admin de Django? 
+🔄 __¿Cómo funciona el Admin de Django?__
 
 🛠️ El Admin de Django es una interfaz web automática que Django crea para administrar tu base de datos de forma sencilla, sin necesidad de programar formularios ni vistas.
 
