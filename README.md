@@ -99,26 +99,14 @@ Dentro de cada app, se usan estos cuatro elementos clave:
 
 🔄 ¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django? 
 
-Flujo de datos en Django: 
-  🛠️El usuario rellena y envía el formulario HTML
-      Esto puede ser un <form> típico con campos como nombre, email, descripción, etc.
-  🛠️El navegador envía los datos al servidor Django por HTTP POST
-      Django recibe la solicitud en la vista que corresponde a la URL del formulario.
-  🛠️La vista procesa los datos
-      En views.py, normalmente usamos una clase o función que recoge los datos del request.POST.
-        - Ejemplo:
-            if request.method == 'POST':
-                formulario = MiFormulario(request.POST)
-                if formulario.is_valid():
-                  formulario.save()  # Guarda en la base de datos
-  🛠️El formulario Django valida los datos
-      En forms.py, puedes definir el formulario con reglas de validación. Django verifica que los datos sean correctos antes de guardarlos.
-  🛠️Los datos se guardan en el modelo
-      Si todo es válido, el formulario crea o actualiza una instancia del modelo (que representa una tabla en la base de datos).
-  🛠️La base de datos registra la nueva información
-      Se crea un nuevo registro o se modifica uno existente dentro de la base de datos definida en settings.py.
-  🛠️Django devuelve una respuesta (HTML, redirección, mensaje)
-      Puede mostrar una página de confirmación, volver al formulario, o redirigir a otra vista.
+Flujo de datos en Django:
+- El usuario rellena y envía el formulario HTML. Esto puede ser un <form> típico con campos como nombre, email, descripción, etc.
+- El navegador envía los datos al servidor Django por HTTP POST. Django recibe la solicitud en la vista que corresponde a la URL del formulario.
+- La vista procesa los datos. En views.py, normalmente usamos una clase o función que recoge los datos del request.POST.
+- El formulario Django valida los datos. En forms.py, puedes definir el formulario con reglas de validación. Django verifica que los datos sean correctos antes de guardarlos.
+- Los datos se guardan en el modelo. Si todo es válido, el formulario crea o actualiza una instancia del modelo (que representa una tabla en la base de datos).
+- La base de datos registra la nueva información. Se crea un nuevo registro o se modifica uno existente dentro de la base de datos definida en settings.py.
+- Django devuelve una respuesta (HTML, redirección, mensaje). Puede mostrar una página de confirmación, volver al formulario, o redirigir a otra vista.
       
       
 🔄 ¿Qué herramientas o comandos ofrece Django para facilitar el desarrollo de un CRUD, para qué es cada una? (Por ejemplo: startapp, makemigrations, migrate, runserver, ModelForm, admin, etc.) 
@@ -194,7 +182,7 @@ admin.site.register(Producto)
 
 🔑 ¿Cómo se activa?
 - Crear un superusuario (admin)
-- 
+  
 python manage.py createsuperuser
 
 - Ingresas usuario, email y contraseña.
@@ -207,7 +195,7 @@ from .models import Producto
 admin.site.register(Producto)
 
 - Entrar al panel Inicia el servidor con runserver y entra en:
-- 
+  
 http://localhost:8000/admin
 
 💡 ¿Por qué es útil para desarrollo de CRUD?
