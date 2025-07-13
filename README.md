@@ -2,6 +2,7 @@ Investigación y Desarrollo de un CRUD con Django
 
 Parte 1: Aplicación CRUD y Django 
 
+
 🔄 ¿Qué significa CRUD?
 
 Un CRUD es un acrónimo que representa las cuatro operaciones básicas que puede realizar una aplicación sobre datos:
@@ -22,6 +23,7 @@ Taskify: Una app de gestión de tareas donde los usuarios pueden:
 - ✏️ Editar detalles como fecha límite o prioridad
 - 🗑️ Eliminar tareas completadas o innecesarias
 Backend (por ejemplo, en Django o Node.js) se encarga de las operaciones sobre la base de datos, y el frontend (React, Vue, etc.) interactúa mediante formularios y botones que disparan esas acciones.
+
 
 🔄 ¿Qué son los patrones de arquitectura en desarrollo de software?
 
@@ -46,6 +48,7 @@ Es una variante del MVC adaptada por Django:
 
 🐍 ¿Cuál se usa en Django?
 Django utiliza el patrón MVT (Modelo–Vista–Template). Aunque conceptualmente es muy parecido a MVC, Django lo adapta para funcionar con su propio sistema de templates y rutas.
+
 
 🔄 ¿Cómo se estructura un proyecto en Django? Explicar brevemente el rol de los modelos, vistas, templates y URLs. 
 
@@ -92,6 +95,7 @@ Dentro de cada app, se usan estos cuatro elementos clave:
      Ejemplo:
         {% for libro in libros %}
           <li>{{ libro.titulo }}</li>
+          
 
 🔄 ¿Cuál es el flujo de datos entre un formulario HTML y la base de datos en Django? 
 
@@ -115,6 +119,7 @@ Flujo de datos en Django:
       Se crea un nuevo registro o se modifica uno existente dentro de la base de datos definida en settings.py.
   🛠️Django devuelve una respuesta (HTML, redirección, mensaje)
       Puede mostrar una página de confirmación, volver al formulario, o redirigir a otra vista.
+      
       
 🔄 ¿Qué herramientas o comandos ofrece Django para facilitar el desarrollo de un CRUD, para qué es cada una? (Por ejemplo: startapp, makemigrations, migrate, runserver, ModelForm, admin, etc.) 
 
@@ -176,6 +181,7 @@ from django.contrib import admin
 from .models import Producto
 
 admin.site.register(Producto)
+
 
 🔄 ¿Cómo funciona el Admin de Django? 
 
