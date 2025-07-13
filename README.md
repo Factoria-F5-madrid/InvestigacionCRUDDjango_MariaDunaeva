@@ -1,4 +1,4 @@
-Investigación y Desarrollo de un CRUD con Django 
+Investigación y Desarrollo de un CRUD con Django
 
 Parte 1: Aplicación CRUD y Django 
 
