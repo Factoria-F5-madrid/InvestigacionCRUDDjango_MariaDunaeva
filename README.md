@@ -87,7 +87,7 @@ Dentro de cada app, se usan estos cuatro elementos clave:
       path('libros/', views.lista_libros, name='libros')
 
   🔍 ¿Para qué se usa el signo %% en los templates?
-      - {% ... %} se usa para estructuras de control: bucles, condiciones, extensiones.
+      - {% ... %} se usa para estructuras de control: bucles, condiciones, extensiones. Es una manera para incrustar código dentro de los templates.
      
      Ejemplo:
         {% for libro in libros %}
@@ -108,7 +108,7 @@ Flujo de datos en Django:
                 if formulario.is_valid():
                   formulario.save()  # Guarda en la base de datos
   🛠️El formulario Django valida los datos
-      En forms.py, puedes definir el formulario con reglas de validación. Django verifica que los datos sean correctos antes de guardarlos.
+      En forms.py, puedes definir el formulario con reglas de validación. Django verifica que los datos sean correctos antes de guardarlos. De esta forma, se facilita el manejo de los formularios.
   🛠️Los datos se guardan en el modelo
       Si todo es válido, el formulario crea o actualiza una instancia del modelo (que representa una tabla en la base de datos).
   🛠️La base de datos registra la nueva información
