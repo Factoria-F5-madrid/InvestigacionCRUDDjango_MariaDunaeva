@@ -182,20 +182,20 @@ admin.site.register(Producto)
 - Puedes personalizarlo para mostrar columnas específicas, filtros, búsqueda, validaciones y relaciones entre modelos.
 
 🔑 ¿Cómo se activa?
-- Crear un superusuario (admin)
+- Se crea un superusuario (admin)
   
 python manage.py createsuperuser
 
-- Ingresas usuario, email y contraseña.
+- Ingresa usuario, email y contraseña.
 
-- Registrar tus modelos en admin.py
+- Registra tus modelos en admin.py
   
 from django.contrib import admin
 from .models import Producto
 
 admin.site.register(Producto)
 
-- Entrar al panel Inicia el servidor con runserver y entra en:
+- Entra al panel Inicia el servidor con runserver y entra en:
   
 http://localhost:8000/admin
 
