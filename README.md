@@ -6,10 +6,10 @@ Parte 1: Aplicación CRUD y Django
 
 Un CRUD es un acrónimo que representa las cuatro operaciones básicas que puede realizar una aplicación sobre datos:
 
-C (Create) Crear un nuevo registro en la base de datos 
-R (Read) Leer o visualizar datos existentes 
-U (Update) Modificar un registro existente 
-D (Delete) Eliminar un registro de la base de datos 
+C (Create): Crear un nuevo registro en la base de datos;
+R (Read): Leer o visualizar datos existentes;
+U (Update): Modificar un registro existente;
+D (Delete): Eliminar un registro de la base de datos.
 
 🧠 Propósito en aplicaciones web
 En el desarrollo web, un CRUD permite a los usuarios gestionar información de forma interactiva. Ya sea en perfiles, productos, publicaciones o comentarios, el CRUD facilita el ciclo completo de vida de los datos. Es la base estructural de la mayoría de sistemas dinámicos, desde redes sociales hasta sistemas administrativos.
