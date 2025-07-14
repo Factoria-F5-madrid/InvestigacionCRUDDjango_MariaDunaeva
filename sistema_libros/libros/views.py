@@ -2,6 +2,9 @@ from django.shortcuts import render, get_object_or_404, redirect
 from .models import Libro
 from .forms import LibroForm
 
+def inicio(request):
+    return render(request, 'libros/inicio.html')
+
 def lista_libros(request):
     libros = Libro.objects.all()
     return render(request, 'libros/lista_libros.html', {'libros': libros})
